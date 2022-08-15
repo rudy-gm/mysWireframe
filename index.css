@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========================= COMPUTER SCREEN CSS ========================== */
+
+/* ========== HEADER CSS ============= */
+
+nav {
+  display: flex;
+  width: 100%;
+  background-color: #50aad0b1;
+  position: relative;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+.links {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  margin: 0 2px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 10px;
+}
+
+nav ul li:hover a {
+  background: white;
+  color: #0a5071;
+}
+
+nav .searchBox {
+  display: flex;
+  margin: auto 0;
+  height: 35px;
+  line-height: 35px;
+
+}
+
+nav .searchBox input {
+  border: none;
+  outline: none;
+  background-color: white;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+  width: 500px;
+  border-radius: 0 5px 5px 0;
+}
+
+nav .searchBox .searchIcon {
+  color: #0a5071;
+  font-size: 20px;
+  background-color: white;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px 0 0 5px;
+}
+
+nav .searchBox .searchIcon:hover {
+  background-color: #0a5071;
+}
+
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+nav .bar span {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+}
+
+/* ====== */
+
+/* ========== BANNER CSS =========== */
+
+.bannerContainer {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 30px;
+  background-color: aliceblue;
+}
+
+.bannerTitle {
+  font-size: 20px;
+}
+
+.bannerSub {
+  display: flex;
+}
+
+.bannerSub-info {
+  margin: 5px;
+}
+
+.bannerButtons {
+  display: flex;
+  padding: 10px;
+}
+
+.bannerAnchors {
+  text-decoration: none;
+  color: black;
+}
+
+.viewsButton {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
+  background-color: white;
+}
+
+.viewsButton:hover {
+  background-color: #0a5071;
+}
+
+.graphIcon {
+  margin: auto 5px;
+}
+
+.viewsText {
+  margin: auto;
+}
+
+.clickButton {
+  display: flex;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.clickButton:hover {
+  background-color: #0a5071;
+}
+
+.mouseIcon {
+  margin: auto 5px;
+}
+
+.clickText {
+  margin: auto 0;
+}
+
+.trafficButton {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.trafficButton:hover {
+  background-color: #0a5071;
+}
+
+.lightBulbIcon {
+  margin: auto 5px;
+}
+
+.trafficText {
+  margin: auto 0;
+}
+
+/* ====== */
+
+/* ============ BODY CSS ======= */
+
+.bodyContainer {
+  display: flex;
+}
+
+.elements {
+  width: 66%;
+  background-color: #95d8f781;
+}
+
+.alert {
+  display: flex;
+  padding: 30px;
+}
+
+.alertIcon {
+  margin: auto 0;
+  margin-left: 5px;
+}
+
+.alertText {
+  margin-left: 30px;
+}
+
+.alertHeader {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.alertBody {
+  margin-top: 10px;
+  width: 75%;
+}
+
+.infoSection {
+  width: 34%;
+  padding: 30px;
+  background-color: #0a5071;
+  color: white;
+}
+
+.dates {
+  margin-top: 10px;
+}
+
+.dates-header {
+  font-weight: 900;
+}
+
+.dates-info {
+  margin-top: 5px;
+}
+
+.codes {
+  margin-top: 20px;
+}
+
+.codesHeader {
+  font-weight: 900;
+}
+
+.codesInfo {
+  margin-top: 5px;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.cardHeader {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+/* ========= */
+
+/* =================================================== */
+
+/* ========================= MOBILE SCREEN CSS ========================== */
+
+@media screen and (max-width: 1250px) {
+  /* =========== HEADER CSS ========== */
+
+  nav {
+    display: block;
+    padding: 0;
+  }
+
+  nav .logo {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+
+  nav .searchBox {
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    visibility: hidden;
+    transition: 0.1ms;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    display: block;
+  }
+
+  nav .bar {
+    display: block;
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    cursor: pointer;
+  }
+
+  nav .bar #times {
+    display: none;
+  }
+
+  #check:checked ~ nav .bar #times {
+    display: block;
+  }
+
+  #check:checked ~ nav .bar #bars {
+    display: none;
+  }
+
+  #check:checked ~ nav ul {
+    visibility: visible;
+    height: 200px;
+  }
+  /* ========= */
+}
+
+/* =========== BANNER CSS ========== */
+
+@media screen and (max-width: 920px) {
+  .bannerContainer {
+    display: block;
+  }
+
+  .bannerTitle {
+    text-align: center;
+  }
+
+  .bannerSub {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerButtons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ========= */
+
+/* =========== BODY CSS ========== */
+
+@media screen and (max-width: 880px) {
+  .bodyContainer {
+    display: block;
+  }
+
+  .elements {
+    width: 100%;
+  }
+
+  .cards {
+    display: block;
+    padding: 20px;
+  }
+
+  .infoSection {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ========= */
+
+/* =================================================== */
